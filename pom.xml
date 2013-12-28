@@ -84,21 +84,21 @@
 			<artifactId>LogBlock</artifactId>
 			<version>1.50</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/LogBlock-1.50.jar</systemPath>
+			<systemPath>${project.basedir}/lib/LogBlock-1.80.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>org.yi</groupId>
 			<artifactId>Lockette</artifactId>
 			<version>1.6</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/Lockette-1.6.jar</systemPath>
+			<systemPath>${project.basedir}/lib/Lockette-1.7.12.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.daemitus</groupId>
 			<artifactId>Deadbolt</artifactId>
 			<version>2.2</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/Deadbolt-2.2.jar</systemPath>
+			<systemPath>${project.basedir}/lib/DeadBolt-15.jar</systemPath>
 		</dependency>
 	</dependencies>
 </project>

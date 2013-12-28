@@ -292,6 +292,24 @@ public class PhysicalShopListener implements Listener {
 				e.setCancelled(true);
 			}
 			plugin.getServer().getPluginManager().callEvent(event.setCheckExistingChest(false));
+			
+		// Check if the line already contains text. 
+		} else if (e.getLine(3) != ""){
+			
+			// Check if the player's not an admin.
+			if (!plugin.getPermissionHandler().hasAdmin(e.getPlayer())) {
+			
+				// Check if the 4rd line doesn't match the player's name.
+				if (!e.getLine(3).equalsIgnoreCase(e.getPlayer().getName())){
+
+					e.getPlayer().sendMessage("Please use your own name on the sign.");
+					
+					// Cancel the sign change.
+					e.setCancelled(true);
+					return;
+				}
+			}
+			
 		} else {
 			if (plugin.getPluginConfig().isAutoFillName()) {
 				if(plugin.getPluginConfig().isExtendedNames()) {
